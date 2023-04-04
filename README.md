@@ -41,16 +41,16 @@ df=pd.read_excel("/content/FlightInformation.xlsx")
 ## (i) Numerical & Numerical  
 sns.scatterplot(x='Duration',y='Dep_Time',data=df)
 
-![1](https://user-images.githubusercontent.com/53014593/195491340-68a3bc53-3938-457c-bae4-2138d5c5ff99.png)
+![w1](https://user-images.githubusercontent.com/128135244/229690310-365e6bff-9c2d-4970-be32-f38057c082eb.png)
 
 ## (ii) Numerical & Categorical
 sns.barplot (x=df['Duration'],y=df['Price'])
 
-![2](https://user-images.githubusercontent.com/53014593/195491432-7694c436-7caa-4e9d-9ddc-3b2a55e19f1b.png)
+![w2](https://user-images.githubusercontent.com/128135244/229690368-62ef3313-9f7c-4969-aab3-04c3a28e5de3.png)
 
 sns.barplot(x=df["Arrival_Time"],y=df["Price"],data=df)
 
-![3](https://user-images.githubusercontent.com/53014593/195491501-48e2b95b-a751-495e-bf50-4f3b33335862.png)
+![w3](https://user-images.githubusercontent.com/128135244/229690385-2f2e4b12-71f9-466a-9ab9-fb82179d311f.png)
 
 states=df.loc[:,["Duration","Price"]]
 
@@ -66,7 +66,7 @@ plt.ylabel=("Price")
 
 plt.show()
 
-![4](https://user-images.githubusercontent.com/53014593/195491650-bd1ce9da-0399-469f-ad84-4f02854f6f6b.png)
+![w4](https://user-images.githubusercontent.com/128135244/229690417-f768d2f4-ea32-425d-b249-264b3e5a52b8.png)
 
 ## Multivariate Analysis    
 
@@ -75,8 +75,7 @@ data = np.random.randint(low = 1, high = 100, size = (10, 10))
 hm = sns.heatmap(data = data)  
 
 plt.show()  
-
-![5](https://user-images.githubusercontent.com/53014593/195491749-357f3918-d627-4566-85ab-44b21a758900.png)
+![w5](https://user-images.githubusercontent.com/128135244/229690441-7ac1040b-6ec7-42e7-b029-ffe0b45e72c7.png)
 
 
 ## RESULT:  
